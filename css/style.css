@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap');
 
+:root {
+    --primary-color: cadetblue;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -98,7 +102,7 @@ nav ul li {
 }
 
 .sections {
-    margin: 10px;
+    margin: 20px 10px;
     padding: 5px;
 }
 
@@ -117,7 +121,7 @@ nav ul li {
     width: 30%;
 }
 
-/* FEATURED PRODUCTS */
+/* FEATURED PRODUCTS & LATEST PRODUCTS */
 .featured-grid {
     display: flex;
     justify-content: center;
@@ -141,10 +145,15 @@ nav ul li {
     min-width: 250px;
     margin-bottom: 30px;
     margin: auto;
+    transition: transform 0.5s;
 }
 
 .col-3 img {
     width: 100%;
+}
+
+.col-3:hover {
+    transform: translateY(-5px);
 }
 
 footer {
