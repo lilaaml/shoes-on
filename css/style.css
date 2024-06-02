@@ -135,7 +135,7 @@ nav ul li {
     max-width: 45%;
     max-height: 300px;
     margin-left: 3rem !important;
-    background: cadetblue;
+    /* background: cadetblue; */
 }
 
 /* FEATURED PRODUCTS & LATEST PRODUCTS */
@@ -179,4 +179,26 @@ footer {
     text-align: center;
     margin: 2px;
     padding: 2px 2px;
+}
+
+@media (max-width: 1075px) {
+    .offers-item {
+        flex-direction: column;
+    }
+
+    .offers-item img {
+        max-width: 100%;
+    }
+
+    .offers-desc {
+        text-align: center;
+        max-width: 90%;
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 1015px) {
+    .offers-desc {
+        font-size: 1em;
+    }
 }
