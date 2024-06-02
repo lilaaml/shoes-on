@@ -85,9 +85,6 @@ nav ul li {
 #hero {
     height: 50vh;
     position: relative;
-    /* width: auto;
-    text-align: center; */
-    /* background: cadetblue; */
 }
 
 #hero:before {
@@ -121,6 +118,12 @@ nav ul li {
     width: 30%;
 }
 
+#offers {
+    background: radial-gradient(#fff, cadetblue);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
 .offers-grid img {
     width: 50%;
 }
@@ -136,6 +139,20 @@ nav ul li {
     max-height: 300px;
     margin-left: 3rem !important;
     /* background: cadetblue; */
+}
+
+.offers-desc a {
+    color: #fff;
+    border: solid 1px cadetblue;
+    border-radius: 5rem;
+    background: cadetblue;
+    padding: 10px;
+}
+
+.offers-desc a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #3f6869;
 }
 
 /* FEATURED PRODUCTS & LATEST PRODUCTS */
@@ -171,6 +188,16 @@ nav ul li {
 
 .col-3:hover {
     transform: translateY(-5px);
+}
+
+/* BRANDS */
+#brands {
+    margin: auto;
+    text-align: center;
+}
+
+.brands-grid {
+    flex-wrap: wrap;
 }
 
 footer {
