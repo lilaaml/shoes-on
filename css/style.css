@@ -103,19 +103,30 @@ nav ul li {
     padding: 5px;
 }
 
-/* CATEGORIES & OFFERS */
-.categories-grid, .offers-grid {
+/* CATEGORIES */
+.categories-grid img {
+    width: 30%;
+}
+
+#categories {
+    margin: auto;
+    text-align: center;
+}
+
+.categories-grid {
+    flex-wrap: wrap;
+}
+
+/* OFFERS */
+.offers-grid {
     margin: auto;
     text-align: center;
     padding: 0 25px;
+    /* flex-wrap: wrap; */
 }
 
-.categories-item, .offers-grid {
+.offers-grid {
     width: 80%;
-}
-
-.categories-item img {
-    width: 30%;
 }
 
 #offers {
@@ -227,5 +238,11 @@ footer {
 @media (max-width: 1015px) {
     .offers-desc {
         font-size: 1em;
+    }
+}
+
+@media (max-width: 670px) {
+    .categories-grid img {
+        width: 70%;
     }
 }
