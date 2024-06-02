@@ -106,19 +106,36 @@ nav ul li {
     padding: 5px;
 }
 
-/* CATEGORIES */
-.categories-grid {
+/* CATEGORIES & OFFERS */
+.categories-grid, .offers-grid {
     margin: auto;
     text-align: center;
     padding: 0 25px;
 }
 
-.categories-item {
+.categories-item, .offers-grid {
     width: 80%;
 }
 
 .categories-item img {
     width: 30%;
+}
+
+.offers-grid img {
+    width: 50%;
+}
+
+.offers-item {
+    align-items: center;
+}
+
+.offers-desc {
+    text-align: left;
+    font-size: 1.5rem;
+    max-width: 45%;
+    max-height: 300px;
+    margin-left: 3rem !important;
+    background: cadetblue;
 }
 
 /* FEATURED PRODUCTS & LATEST PRODUCTS */
