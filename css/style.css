@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap');
 
 :root {
-    --primary-color: cadetblue;
+    --pc: cadetblue;
+    --hc: #fff;
+    --tc: #333;
 }
 
 * {
@@ -27,13 +29,17 @@ header {
     overflow: hidden;
 }
 
+.spacing {
+    height: 5vh;
+}
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 1.4rem; 
     border-radius: 5rem;
-    border: 1px solid #fff;
+    border: 2px solid var(--hc);
     padding: 0;
     margin: 5px 10px;
     font-weight: 500;
@@ -46,8 +52,8 @@ nav ul {
 
 #branding {
     border-radius: 5rem;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid var(--hc);
+    color: var(--hc);
     margin: 0;
     padding: 10px;
     cursor: pointer;
@@ -56,7 +62,7 @@ nav ul {
 nav ul li {
     cursor: pointer;
     border-radius: 5rem;
-    border: 1px solid #fff;
+    border: 1px solid var(--hc);
     padding: 14px;
     margin: 0;
     display: inline;
@@ -64,13 +70,13 @@ nav ul li {
 }
 
 #branding a, nav ul li a {
-    color: #fff;
+    color: var(--hc);
     text-decoration: none;
 }
 
 #branding:hover, #branding a:hover, nav ul li:hover, nav ul li a:hover {
-    color: cadetblue;
-    background: #fff;
+    color: var(--pc);
+    background: var(--hc);
     text-decoration: none;
     font-weight: 500;
 }
@@ -115,7 +121,6 @@ nav ul li {
     margin: auto;
     text-align: center;
     padding: 0 25px;
-    /* flex-wrap: wrap; */
 }
 
 .offers-grid {
@@ -142,7 +147,6 @@ nav ul li {
     max-width: 45%;
     max-height: 300px;
     margin-left: 3rem !important;
-    /* background: cadetblue; */
 }
 
 .offers-desc a {
@@ -160,6 +164,10 @@ nav ul li {
 }
 
 /* FEATURED PRODUCTS & LATEST PRODUCTS */
+.rating {
+    color: var(--pc);
+}
+
 .featured-grid {
     display: flex;
     justify-content: center;
@@ -167,7 +175,6 @@ nav ul li {
 }
 
 .featured-item {
-    /* background: cadetblue; */
     padding: 10px 0;
     width: 250px;
     margin: 20px;
@@ -204,6 +211,55 @@ nav ul li {
     flex-wrap: wrap;
 }
 
+.col-1 {
+    flex-basis: 30%;
+    margin: auto;
+}
+
+.col-1 img {
+    max-width: 60%;
+}
+
+/* PRODUCTS PAGE */
+.page-btn span {
+    font-size: 1.5rem;
+    display: inline-block;
+    border: 1px solid var(--pc);
+    border-radius: 0.5rem;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: var(--pc);
+    font-weight: 500;
+}
+
+.page-btn span:hover {
+    background: var(--pc);
+    color: var(--hc);
+}
+
+/* SORTING */
+#sorting {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sorting select {
+    border: 1px solid var(--pc);
+    border-radius: 0.5rem;
+    padding: 5px;
+}
+
+#sorting select:focus {
+    outline: none;
+}
+
+/* SORTING: ALL PRODUCTS */
+
 /* FOOTER */
 footer {
     font: 'Arial', sans-serif;
@@ -239,16 +295,6 @@ footer h3 {
 
 .col-2 li {
     list-style: none;
-}
-
-.col-1 {
-    flex-basis: 30%;
-    background: cadetblue;
-    margin: auto;
-}
-
-.col-1 img {
-    max-width: 60%;
 }
 
 .footer-body {
