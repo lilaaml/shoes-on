@@ -2,8 +2,10 @@
 
 :root {
     --pc: cadetblue;
+    --spc: #3f6869;
     --hc: #fff;
     --tc: #333;
+    --menu-speed: 0.75s;
 }
 
 * {
@@ -50,7 +52,7 @@ nav ul {
     padding: 0;
 }
 
-#branding {
+#branding, #cart {
     border-radius: 5rem;
     border: 1px solid var(--hc);
     color: var(--hc);
@@ -69,16 +71,57 @@ nav ul li {
     list-style: none;
 }
 
-#branding a, nav ul li a {
+#branding a, #cart a, nav ul li a {
     color: var(--hc);
     text-decoration: none;
 }
 
-#branding:hover, #branding a:hover, nav ul li:hover, nav ul li a:hover {
+#branding:hover, #branding a:hover, #cart:hover, #cart a:hover, nav ul li:hover, nav ul li a:hover {
     color: var(--pc);
     background: var(--hc);
     text-decoration: none;
     font-weight: 500;
+}
+
+/* HAMBURGER MENU */
+.menu-icon {
+    margin: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    display: none;
+}
+
+.menu-icon > div {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--hc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in;
+}
+
+/* Top and bottom lines */
+.menu-icon > div:before,
+.menu-icon > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+.menu-icon > div::after {
+    top: 10px;
 }
 
 #hero {
@@ -160,7 +203,7 @@ nav ul li {
 .offers-desc a:hover {
     color: #fff;
     text-decoration: none;
-    background: #3f6869;
+    background: var(--spc);
 }
 
 /* FEATURED PRODUCTS & LATEST PRODUCTS */
@@ -329,6 +372,74 @@ footer h3 {
 @media (max-width: 1015px) {
     .offers-desc {
         font-size: 1em;
+    }
+}
+
+@media (max-width: 800px) {
+    /* HAMBURGER MENU */
+    #branding {
+        border: none;
+        margin-left: 10px;
+    }
+
+    #cart {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        right: 0;
+        margin: 50px;
+        z-index: 1030;
+        background: var(--pc);
+        height: 100px;
+        width: 100px;
+        padding: 25px 25px;
+        border-radius: 5rem;
+        font-size: 2.5rem;
+        border: 1px solid var(--pc);
+    }
+
+    #cart:hover, #cart a:hover {
+        background: var(--spc);
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .menu-icon > div {
+        background: var(--hc);
+    }
+    
+    nav ul {
+        transition: all 0.5s ease-in;
+        position: absolute;
+        z-index: -1;
+        top: 65px;
+        left: 0;
+        background: var(--pc);
+        color: var(--pc);
+        width: 100%;
+        border-radius: 0.5rem;
+        padding: 15px;
+        opacity: 0;
+    }
+    
+    nav ul li {
+        border: none;
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li:hover, nav ul li a:hover {
+        background: var(--hc);
+        width: 100%;
+    }
+
+    nav ul li a {
+        color: var(--hc);
     }
 }
 
