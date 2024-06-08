@@ -25,7 +25,7 @@ header {
 
 .container {
     margin: auto;
-    max-width: 80%;
+    max-width: 90%;
     justify-content: center;
     padding: 0 25px;
     overflow: hidden;
@@ -33,6 +33,13 @@ header {
 
 .spacing {
     height: 9vh;
+}
+
+.title {
+    align-items: center;
+    justify-content: space-between;
+    /* background: #3f6869; */
+    padding: 15px 50px;
 }
 
 nav {
@@ -301,7 +308,68 @@ nav ul li {
     outline: none;
 }
 
-/* SORTING: ALL PRODUCTS */
+/* PRODUCT DETAILS */
+.details-grid {
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+/* .details-grid img {
+    width: 30%;
+    height: auto;
+} */
+
+.details-item {
+    align-items: center;
+    padding: 0;
+    /* background: pink; */
+}
+
+.img-col {
+    /* background: #3f6869; */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    height: 500px;
+    width: 30%;
+}
+
+.small-img-row {
+    /* background: cornflowerblue; */
+    align-items: center;
+    padding-left: 8px;
+    height: 30%;
+}
+
+.small-img-row img {
+    /* margin: auto; */
+    width: 90%;
+}
+    
+.details-col {
+    align-items: center;
+    padding: 0;
+    width: 30%;
+    margin: 10px 40px;
+}
+
+.details-btn {
+    margin-top: 1px;
+    color: var(--hc);
+    background: var(--pc);
+    border: 1px solid var(--pc);
+    border-radius: 5rem;
+}
+
+.details-btn:hover {
+    background: var(--spc);
+    color: var(--hc);
+    border: 1px solid var(--spc);
+}
 
 /* FOOTER */
 footer {
@@ -366,6 +434,18 @@ footer h3 {
         text-align: center;
         max-width: 90%;
         margin-left: 0 !important;
+    }
+
+    .details-grid {
+        padding-left: 70px;
+    }
+
+    .details-item {
+        margin: auto;
+    }
+
+    .details-item img {
+        width: 60%;
     }
 }
 

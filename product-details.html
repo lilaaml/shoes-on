@@ -30,26 +30,57 @@
 
     <div class="spacing"></div>
 
-    <div class="featured-grid container">
-        <div class="categories-grid container d-inline-flex">
-            <img src="images/item.png" class="img-fluid m-1">
-            <div class="featured-item">
-                <p>Home / T-Shirt</p>
-                <h1>Red Printed T-Shirt by HRX</h1>
+    <div class="details-grid container">
+        <div class="details-item container d-inline-flex">
+            <div class="img-col">
+                <img src="images/item.png" id="productImg" class="img-fluid">
+
+                <div class="small-img-row d-inline-flex">
+                    <div class="small-img-col">
+                        <img src="images/item-a.png" class="img-fluid small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/item-b.png" class="img-fluid small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/item-c.png" class="img-fluid small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/item-d.png" class="img-fluid small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/item-e.png" class="img-fluid small-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="details-col">
+                <p>Home / Sneakers</p>
+                <h1>[Product Name]</h1>
                 <h4>$50.00</h4>
                 <select>
-                    <option>Select Size</option>
-                    <option>XXL</option>
-                    <option>XL</option>
-                    <option>L</option>
-                    <option>M</option>
-                    <option>S</option>
+                    <option>Select Color</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Grey</option>
                 </select>
+                <input type="number" value="1" class="my-1">
+                <a href="" class="btn details-btn">Add to cart</a>
+                <h3>Product Details</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, officiis.</p>
             </div>
         </div>
     </div>
 
+    
     <div class="featured-grid container">
+        <div class="title d-inline-flex container">
+            <h3>Related Products</h3>
+            <p>View More</p>
+        </div>
+        
         <div class="featured-item">
             <div class="col-3">
                 <img src="images/item.png" alt="">
@@ -150,5 +181,7 @@
             <p>Copyright &copy; 2024 ShoesON!</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
