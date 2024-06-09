@@ -610,3 +610,27 @@ footer h3 {
         width: 70%;
     }
 }
+
+.account-form {
+    width: 20%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    background: var(--pc);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.account-form input {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid var(--pc);
+    border-style: none;
+    border-radius: 0.25rem;
+}
+
+.account-form button {
+    margin-top: 15px;
+}
