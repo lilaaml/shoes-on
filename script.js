@@ -1,3 +1,4 @@
+// HAMBURGER MENU
 var menuItems = document.getElementById('menuItems');
 menuItems.style.opacity = '100%';
 
@@ -9,6 +10,7 @@ function menuToggle() {
     }
 }
 
+// PRODUCT DETAILS
 var productImg = document.getElementById('productImg');
 var smallImg = document.getElementsByClassName('small-img');
 
